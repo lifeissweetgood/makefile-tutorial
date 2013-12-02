@@ -1,0 +1,22 @@
+# Makefile - Version 4
+
+CC=gcc
+CFLAGS=-I.
+DEPS=hellomake.h
+
+OBJ := hellomake.o
+OBJ += hellofunc.o
+
+# Compiles each of the object files as separate targets
+%.o: %.c $(DEPS)
+	$(CC) -c -o $@ $< $(CFLAGS)
+
+# -o $@ -> Tells make to put the output in a file named after the target
+# $^ 	-> all of the file names in $(OBJ) separated by a space
+hellomake: $(OBJ)
+	$(CC) -o $@ $^ $(CFLAGS)
+
+.PHONY: clean
+
+clean:
+	rm -f *.o hellomake Makefile
