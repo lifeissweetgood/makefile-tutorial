@@ -1,0 +1,10 @@
+# Makefile - Version 2
+
+CC=gcc
+CFLAGS=-I.
+
+# Tells make to compile the .c files individually to build hellomake target
+# This ensures make always compiles the latest changes
+hellomake: hellomake.o hellofunc.o
+	$(CC) -o hellomake hellomake.o hellofunc.o $(CFLAGS)
+
