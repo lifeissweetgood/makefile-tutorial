@@ -13,3 +13,7 @@ DEPS=hellomake.h
 hellomake: hellomake.o hellofunc.o
 	$(CC) -o hellomake hellomake.o hellofunc.o $(CFLAGS)
 
+# Target to clean files created during compilation
+clean:
+	rm -f *.o hellomake Makefile
+	mv Makefile.orig Makefile

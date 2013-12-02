@@ -18,5 +18,7 @@ hellomake: $(OBJ)
 
 .PHONY: clean
 
+# Target to clean files created during compilation
 clean:
 	rm -f *.o hellomake Makefile
+	mv Makefile.orig Makefile
