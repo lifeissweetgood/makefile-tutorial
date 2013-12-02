@@ -34,5 +34,5 @@ Makefiles also have special macros for indicating variables:
 
 You can also introduce your own macros like:
 
-TARGETS     --> Indicates a list of targets to build
+`TARGETS`     --> Indicates a list of targets to build
 
