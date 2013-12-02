@@ -18,16 +18,18 @@ You can run bash commands like
 
 ```
 all:
-
     echo Hello
 ```
 
 Makefiles also have special macros for indicating variables:
 
 
-CC          --> Tells `make` which C compiler to use
-CFLAGS      --> Specifies command line flags to pass to compiler
-DEPS        --> File dependencies
+`CC`          --> Tells `make` which C compiler to use
+
+`CFLAGS`      --> Specifies command line flags to pass to compiler
+
+`DEPS`        --> File dependencies
+
 
 
 You can also introduce your own macros like:
