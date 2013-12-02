@@ -3,6 +3,7 @@ makefile-tutorial
 
 A tutorial on learning Makefiles (Based on tutorial written [here](http://www.cs.colby.edu/maxwell/courses/tutorials/maketutor/))
 
+The ultimate `make` and Makefile resource: [GNU make docs](http://www.gnu.org/software/make/manual/make.html)
 
 ### What is a makefile?
 
