@@ -37,8 +37,8 @@ These rules include *targets*, which are the files/objects `make` will need to b
 Rules usually take the form of:
 
 ```
-[target]: [dependencies]
-         [steps to build target with dependencies]
+target: dependencies
+         steps to build target with dependencies
 ```
 
 
