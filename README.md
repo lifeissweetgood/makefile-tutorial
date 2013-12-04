@@ -32,7 +32,7 @@ Substitute `build-v2` with either `build-v1`, `build-v3` or `build-v4` to run ma
 ### What is a makefile?
 
 A makefile is a special file that lists a set of rules for compiling a project.
-These rules include *targets*, which are the files/objects `make` will need to build, and the commands that need to be run in order to build that target.  When you call the program `make`, it runs through each of these targets in your Makefile and executes them.
+These rules include *targets*, which can be an action `make` needs to take (eg. "clean" or "build") or the files/objects `make` will need to build (eg. .o files or an executable), and the commands that need to be run in order to build that target.  When you call the program `make`, it runs through each of these targets in your Makefile and executes them.
 
 Rules usually take the form of:
 
