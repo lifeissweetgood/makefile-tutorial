@@ -1,9 +1,33 @@
 makefile-tutorial
 =================
 
-A tutorial on learning Makefiles (Based on tutorial written [here](http://www.cs.colby.edu/maxwell/courses/tutorials/maketutor/))
+A tutorial on Makefiles (Based on tutorial written [here](http://www.cs.colby.edu/maxwell/courses/tutorials/maketutor/))
 
-The ultimate `make` and Makefile resource: [GNU make docs](http://www.gnu.org/software/make/manual/make.html)
+## Let's Demystify Makefiles!
+
+This tutorial explains what Makefiles are, how they are useful and shows how to write your own from scratch.  To see how Makefiles work "in action," clone the source code on the master branch and compile the simple C project. There are different versions of the same Makefile with varying degrees of complexity.  To compile each, run the following commands:
+
+```
+make build-v1
+make
+```
+
+To run the simple C program, do:
+
+```
+./hellomake
+```
+
+To run a different version of the Makefile, do:
+
+```
+make clean
+make build-v2
+make
+```
+
+Substitute `build-v2` with either `build-v1`, `build-v3` or `build-v4` to run make with each of the other corresponding Makefile versions.
+
 
 ### What is a makefile?
 
@@ -37,3 +61,9 @@ You can also introduce your own macros like:
 
 `TARGETS`     --> Indicates a list of targets to build
 
+
+### Resources
+
+The ultimate `make` and Makefile resource: [GNU make docs](http://www.gnu.org/software/make/manual/make.html)
+
+The tutorial upon which this one is based: [cs.colby.edu](http://www.cs.colby.edu/maxwell/courses/tutorials/maketutor/)
