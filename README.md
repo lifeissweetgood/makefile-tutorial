@@ -38,7 +38,7 @@ Rules usually take the form of:
 
 ```
 target: dependencies
-         steps to build target with dependencies
+       steps to build target with dependencies
 ```
 
 
