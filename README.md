@@ -21,9 +21,7 @@ To run the simple C program, do:
 To run a different version of the Makefile, do:
 
 ```
-make clean
-make build-v2
-make
+make clean; make build-v2; make
 ```
 
 Substitute `build-v2` with either `build-v1`, `build-v3` or `build-v4` to run make with each of the other corresponding Makefile versions.
